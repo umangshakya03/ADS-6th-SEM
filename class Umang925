@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Umang925{
+    private String name;
+    private int rollNumber;
+    private int age;
+
+    public Umang925(String name, int rollNumber, int age) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.age = age;
+    }
+    @Override
+    public String toString() {
+        return "name=" + name + ", rollNumber=" + rollNumber + ", age=" + age ;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Umang925> students = new ArrayList<>();
+
+        students.add(new Umang925("abc", 12, 19));
+        students.add(new Umang925("def", 21, 21));
+
+        for (Umang925 student : students) {
+            System.out.println(student);
+        }
+    }
+}
